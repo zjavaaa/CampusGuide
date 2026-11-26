@@ -1,19 +1,9 @@
 # Wymagania i plan odbioru
 
-## Problem i zakres
+**Cel.** Ułatwić nowym studentom znalezienie recepcji, biblioteki i laboratoriów. Projekt obejmuje mapę przykładowego kampusu i opisy budynków w wersji na Windows.
 
-Nowi studenci potrzebują jednego widoku, na którym szybko znajdą recepcję, bibliotekę i laboratoria. Demonstrator przedstawia fikcyjny układ kampusu na komputerze z systemem Windows. Dane są przykładowe i działają offline.
+**Zadanie.** Dodać wybór budynku z mapy i z listy. Kryterium odbioru jest spełnione, gdy każdy z trzech budynków ma własną nazwę, lokalizację i opis, a po zmianie wyboru mapa i lista wskazują ten sam budynek. Sprawdzić scenę po imporcie i powtórzyć próbę w buildzie.
 
-## Zadanie i kryteria odbioru
+**Role.** Koordynacja i integracja obejmują ustalenie wersji Unity oraz scalenie zmian. Implementacja obejmuje scenę i interfejs. Niezależny odbiór obejmuje odtworzenie projektu z repozytorium i sprawdzenie zadania według README.
 
-Zadanie „Wybór budynku na mapie” obejmuje trzy oznaczone punkty i panel informacyjny. Po uruchomieniu scena zachęca do wyboru punktu. Każdy punkt można wybrać na mapie lub z listy. Po wyborze panel pokazuje nazwę, opis i lokalizację tego punktu, a poprzedni wybór przestaje być zaznaczony. Odbiór obejmuje otwarcie sceny po ponownym imporcie, przejście przez trzy punkty i uruchomienie buildu Windows.
-
-## Proponowany podział ról
-
-- Koordynacja i integracja – ustalenie wersji Edytora, zakresu oraz przegląd i scalenie zmian.
-- Implementacja – scena, mapa, panel informacyjny i powiązane pliki .meta.
-- Odbiór – niezależne odtworzenie projektu z repozytorium i sprawdzenie kryteriów w buildzie.
-
-## Decyzja o migracji
-
-W sytuacji z ćwiczenia 3 do wydania zostały trzy dni. Koordynator utrzymuje Unity 2022.3.5f1 na main do wydania. Po wydaniu właściciel integracji zakłada gałąź test/editor-upgrade i otwiera osobną kopię źródeł w wymaganej wersji. Akceptacja wymaga pomyślnego importu pakietów, przejścia testu wszystkich trzech punktów, udanego buildu Windows i przeglądu zmian plików projektu. W razie niepowodzenia zespół wraca do osobnej kopii z niezmienionego commitu main i otwiera ją w 2022.3.5f1.
+**Decyzja o migracji.** Do wydania zostały trzy dni, więc koordynator utrzymuje Unity 2022.3.5f1. Po wydaniu właściciel integracji sprawdzi nowszy Edytor na gałęzi `test/editor-upgrade` w osobnej kopii. Warunki przyjęcia zmiany to import pakietów, działanie trzech punktów, udany build Windows i przegląd zmian. Jeśli próba się nie powiedzie, zespół otworzy osobną kopię z `main` w 2022.3.5f1.
